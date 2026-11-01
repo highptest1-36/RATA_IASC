@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# data (download from the official UTD-MHAD page) and checkpoints (GitHub release)
+raw/
+processed/
+*.pt
+*.zip
+REVISION_R1/experiments/outputs/cpu/
+REVISION_R1/manuscript_R1/

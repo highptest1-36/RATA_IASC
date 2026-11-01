@@ -1,0 +1,59 @@
+08:41:05 device {'device': 'cuda', 'torch': '2.11.0+cu130', 'gpu': 'NVIDIA A100-SXM4-80GB', 'started': '2026-11-01 08:41:05'}
+08:41:18 A: LateFusion-Clean seed 0 done
+08:41:20 A: LateFusion-Clean seed 1 done
+08:41:22 A: LateFusion-Clean seed 2 done
+08:41:26 A: LateFusion-Robust seed 0 done
+08:41:29 A: LateFusion-Robust seed 1 done
+08:41:32 A: LateFusion-Robust seed 2 done
+08:41:37 A: RATA-MAR seed 0 done
+08:41:40 A: RATA-MAR seed 1 done
+08:41:44 A: RATA-MAR seed 2 done
+08:41:47 A: NoAlignment seed 0 done
+08:41:51 A: NoAlignment seed 1 done
+08:41:54 A: NoAlignment seed 2 done
+08:41:57 A: NoReliability seed 0 done
+08:42:00 A: NoReliability seed 1 done
+08:42:05 A: NoReliability seed 2 done
+08:42:05 A: SkeletonOnly seed 0 done
+08:42:06 A: SkeletonOnly seed 1 done
+08:42:07 A: SkeletonOnly seed 2 done
+08:42:08 A: IMUOnly seed 0 done
+08:42:09 A: IMUOnly seed 1 done
+08:42:10 A: IMUOnly seed 2 done
+08:42:12 A: reproduction | deterministic max |diff| = 0.000 pp (n=96, exact=96) | stochastic max |diff| = 0.000 pp
+08:42:16 B: paired tests written
+08:42:21 C: LateFusion-Clean seed 0 done
+08:42:27 C: LateFusion-Clean seed 1 done
+08:42:33 C: LateFusion-Clean seed 2 done
+08:42:38 C: LateFusion-Robust seed 0 done
+08:42:44 C: LateFusion-Robust seed 1 done
+08:42:50 C: LateFusion-Robust seed 2 done
+08:42:58 C: RATA-MAR seed 0 done
+08:43:07 C: RATA-MAR seed 1 done
+08:43:15 C: RATA-MAR seed 2 done
+08:43:23 C: NoAlignment seed 0 done
+08:43:32 C: NoAlignment seed 1 done
+08:43:40 C: NoAlignment seed 2 done
+08:43:49 C: NoReliability seed 0 done
+08:43:58 C: NoReliability seed 1 done
+08:44:06 C: NoReliability seed 2 done
+08:44:07 D: LateFusion-Clean seed 0 done
+08:44:08 D: LateFusion-Clean seed 1 done
+08:44:09 D: LateFusion-Clean seed 2 done
+08:44:10 D: LateFusion-Robust seed 0 done
+08:44:11 D: LateFusion-Robust seed 1 done
+08:44:12 D: LateFusion-Robust seed 2 done
+08:44:13 D: RATA-MAR seed 0 done
+08:44:15 D: RATA-MAR seed 1 done
+08:44:16 D: RATA-MAR seed 2 done
+08:44:18 D: NoAlignment seed 0 done
+08:44:19 D: NoAlignment seed 1 done
+08:44:20 D: NoAlignment seed 2 done
+08:44:22 D: NoReliability seed 0 done
+08:44:23 D: NoReliability seed 1 done
+08:44:25 D: NoReliability seed 2 done
+08:44:26 E: seed 0 done
+08:44:27 E: seed 1 done
+08:44:29 E: seed 2 done
+08:44:29 ALL DONE
+EXIT=0

@@ -1,0 +1,16 @@
+model,scenario,top1
+LateFusion-Clean,missing_skeleton,0.0372093023255813
+LateFusion-Clean,missing_imu,0.0906976744186046
+LateFusion-Clean,skeleton_noise,0.8043410852713176
+LateFusion-Clean,imu_noise,0.9296124031007751
+LateFusion-Clean,joint_drop_30,0.7592248062015505
+LateFusion-Robust,missing_skeleton,0.8542635658914728
+LateFusion-Robust,missing_imu,0.5891472868217055
+LateFusion-Robust,skeleton_noise,0.9209302325581395
+LateFusion-Robust,imu_noise,0.9353488372093022
+LateFusion-Robust,joint_drop_30,0.9272868217054264
+RATA-MAR-SI-v2.1,missing_skeleton,0.8790697674418605
+RATA-MAR-SI-v2.1,missing_imu,0.8046511627906977
+RATA-MAR-SI-v2.1,skeleton_noise,0.9390697674418605
+RATA-MAR-SI-v2.1,imu_noise,0.9527131782945736
+RATA-MAR-SI-v2.1,joint_drop_30,0.9328682170542636

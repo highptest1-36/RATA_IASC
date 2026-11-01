@@ -1,0 +1,46 @@
+{
+  "method": "RATA-MAR-SI v2.1",
+  "architecture_change_vs_v2": false,
+  "dataset": "Original UTD-MHAD Skeleton + Inertial",
+  "n_sequences": 861,
+  "n_actions": 27,
+  "development_train_subjects": [
+    1,
+    3,
+    5
+  ],
+  "development_val_subject": [
+    7
+  ],
+  "official_train_subjects": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "official_test_subjects": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "dev_epochs": 40,
+  "final_epochs": 100,
+  "lr": 0.0003,
+  "batch": 64,
+  "final_seeds": [
+    0,
+    1,
+    2
+  ],
+  "corruption_seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5519
+  ],
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB"
+}

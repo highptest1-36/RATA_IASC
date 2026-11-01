@@ -1,0 +1,205 @@
+08:41:20 GPU: NVIDIA A100-SXM4-80GB
+08:41:20 === train R0_RATA_K8_default seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:42:35     clean 94.19 | miss-skel 87.44 | miss-imu 81.63 | ext-mean 80.06 | 1.1 min
+08:42:35 === train K4 seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:43:50     clean 94.19 | miss-skel 86.98 | miss-imu 81.40 | ext-mean 80.70 | 1.1 min
+08:43:50 === train K4 seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+08:45:00     clean 95.12 | miss-skel 86.51 | miss-imu 77.67 | ext-mean 82.42 | 1.1 min
+08:45:00 === train K4 seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+08:46:10     clean 95.35 | miss-skel 86.98 | miss-imu 80.23 | ext-mean 80.31 | 1.0 min
+08:46:10 === train K16 seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:47:20     clean 95.58 | miss-skel 86.51 | miss-imu 80.23 | ext-mean 80.86 | 1.1 min
+08:47:20 === train K16 seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+08:48:30     clean 95.12 | miss-skel 88.14 | miss-imu 79.30 | ext-mean 82.85 | 1.0 min
+08:48:30 === train K16 seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+08:49:40     clean 95.12 | miss-skel 87.91 | miss-imu 79.07 | ext-mean 80.16 | 1.0 min
+08:49:40 === train K32 seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:50:51     clean 96.05 | miss-skel 88.14 | miss-imu 83.95 | ext-mean 81.22 | 1.1 min
+08:50:51 === train K32 seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+08:52:03     clean 95.12 | miss-skel 88.14 | miss-imu 80.00 | ext-mean 82.52 | 1.1 min
+08:52:03 === train K32 seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+08:53:15     clean 95.12 | miss-skel 87.21 | miss-imu 81.86 | ext-mean 81.31 | 1.1 min
+08:53:15 === train T_low seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:54:27     clean 94.19 | miss-skel 87.44 | miss-imu 81.63 | ext-mean 79.97 | 1.1 min
+08:54:27 === train T_low seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+08:55:34     clean 95.58 | miss-skel 87.21 | miss-imu 80.00 | ext-mean 81.71 | 1.0 min
+08:55:34 === train T_low seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+08:56:32     clean 96.28 | miss-skel 88.14 | miss-imu 79.30 | ext-mean 81.04 | 0.8 min
+08:56:32 === train T_high seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+08:57:31     clean 94.19 | miss-skel 87.91 | miss-imu 81.40 | ext-mean 80.20 | 0.9 min
+08:57:31 === train T_high seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+08:58:30     clean 95.35 | miss-skel 87.44 | miss-imu 80.00 | ext-mean 81.92 | 0.9 min
+08:58:30 === train T_high seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+08:59:27     clean 96.05 | miss-skel 88.14 | miss-imu 79.77 | ext-mean 81.07 | 0.8 min
+08:59:27 === train T_flat seed 0
+seed 0 | epoch 1/100
+seed 0 | epoch 20/100
+seed 0 | epoch 40/100
+seed 0 | epoch 60/100
+seed 0 | epoch 80/100
+seed 0 | epoch 100/100
+09:00:22     clean 94.19 | miss-skel 87.21 | miss-imu 81.40 | ext-mean 80.11 | 0.8 min
+09:00:22 === train T_flat seed 1
+seed 1 | epoch 1/100
+seed 1 | epoch 20/100
+seed 1 | epoch 40/100
+seed 1 | epoch 60/100
+seed 1 | epoch 80/100
+seed 1 | epoch 100/100
+09:01:16     clean 95.35 | miss-skel 86.98 | miss-imu 79.77 | ext-mean 81.88 | 0.8 min
+09:01:17 === train T_flat seed 2
+seed 2 | epoch 1/100
+seed 2 | epoch 20/100
+seed 2 | epoch 40/100
+seed 2 | epoch 60/100
+seed 2 | epoch 80/100
+seed 2 | epoch 100/100
+09:02:12     clean 96.28 | miss-skel 88.37 | miss-imu 79.30 | ext-mean 81.01 | 0.8 min
+09:02:12 === train TMC-style seed 0
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  log(f'  {kind} seed {seed} epoch {ep}/{EPOCHS} loss {float(loss):.4f}')
+09:02:15   TMC seed 0 epoch 1/100 loss 16.7830
+09:02:21   TMC seed 0 epoch 20/100 loss 9.8047
+09:02:27   TMC seed 0 epoch 40/100 loss 7.1889
+09:02:34   TMC seed 0 epoch 60/100 loss 6.2530
+09:02:40   TMC seed 0 epoch 80/100 loss 6.1578
+09:02:47   TMC seed 0 epoch 100/100 loss 5.6578
+09:02:54     clean 92.33 | miss-skel 87.67 | miss-imu 81.16 | ext-mean 84.82 | 0.6 min
+09:02:54 === train TMC-style seed 1
+09:02:54   TMC seed 1 epoch 1/100 loss 16.8383
+09:03:01   TMC seed 1 epoch 20/100 loss 9.3974
+09:03:07   TMC seed 1 epoch 40/100 loss 7.9824
+09:03:14   TMC seed 1 epoch 60/100 loss 6.6895
+09:03:20   TMC seed 1 epoch 80/100 loss 6.0134
+09:03:27   TMC seed 1 epoch 100/100 loss 5.8527
+09:03:33     clean 93.02 | miss-skel 87.67 | miss-imu 81.63 | ext-mean 85.33 | 0.6 min
+09:03:33 === train TMC-style seed 2
+09:03:33   TMC seed 2 epoch 1/100 loss 16.5749
+09:03:39   TMC seed 2 epoch 20/100 loss 9.8376
+09:03:46   TMC seed 2 epoch 40/100 loss 7.5655
+09:03:52   TMC seed 2 epoch 60/100 loss 6.6033
+09:03:58   TMC seed 2 epoch 80/100 loss 6.0041
+09:04:05   TMC seed 2 epoch 100/100 loss 6.4313
+09:04:11     clean 94.42 | miss-skel 88.84 | miss-imu 83.49 | ext-mean 86.01 | 0.6 min
+09:04:11 === train QMF-style seed 0
+09:04:12   QMF seed 0 epoch 1/100 loss 13.8620
+09:04:16   QMF seed 0 epoch 20/100 loss 1.6770
+09:04:22   QMF seed 0 epoch 40/100 loss 0.4806
+09:04:27   QMF seed 0 epoch 60/100 loss 0.4444
+09:04:32   QMF seed 0 epoch 80/100 loss 0.5456
+09:04:37   QMF seed 0 epoch 100/100 loss 0.3164
+09:04:43     clean 96.51 | miss-skel 86.98 | miss-imu 80.70 | ext-mean 86.41 | 0.5 min
+09:04:43 === train QMF-style seed 1
+09:04:44   QMF seed 1 epoch 1/100 loss 14.1574
+09:04:49   QMF seed 1 epoch 20/100 loss 1.3769
+09:04:54   QMF seed 1 epoch 40/100 loss 0.9687
+09:04:59   QMF seed 1 epoch 60/100 loss 0.7613
+09:05:05   QMF seed 1 epoch 80/100 loss 0.6810
+09:05:10   QMF seed 1 epoch 100/100 loss 0.5837
+09:05:16     clean 96.05 | miss-skel 86.74 | miss-imu 78.60 | ext-mean 86.10 | 0.5 min
+09:05:16 === train QMF-style seed 2
+09:05:16   QMF seed 2 epoch 1/100 loss 13.6947
+09:05:21   QMF seed 2 epoch 20/100 loss 1.6730
+09:05:26   QMF seed 2 epoch 40/100 loss 0.9105
+09:05:31   QMF seed 2 epoch 60/100 loss 0.4728
+09:05:37   QMF seed 2 epoch 80/100 loss 0.3829
+09:05:42   QMF seed 2 epoch 100/100 loss 0.8642
+09:05:48     clean 94.65 | miss-skel 88.14 | miss-imu 80.00 | ext-mean 85.44 | 0.5 min
+09:05:48 ALL TRAINING DONE -> /content/drive/MyDrive/RATA_IASC/REVISION_R1/experiments/outputs/gpu_train/variants_per_seed.csv
+EXIT=0
