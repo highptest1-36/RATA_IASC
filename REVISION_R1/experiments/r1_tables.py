@@ -184,18 +184,23 @@ def table_variants():
         return
     d = pd.read_csv(p)
     ext = SRC / 'C_extended_per_run.csv'
-    lines = ['\\multicolumn{7}{l}{\\textit{Token count $K$ (time steps per token)}}\\\\']
+    ext_runs = pd.read_csv(SRC / 'C_extended_per_run.csv')
+    ext_pub = ext_runs[ext_runs.model == 'RATA-MAR'].groupby(['seed', 'scenario']).top1.mean().groupby('seed').mean()
+
+    def ext_cell(g, v):
+        return ms(ext_pub, nd=1) if v is None else ms(g.extended_mean_top1, nd=1)
+    lines = ['\\multicolumn{8}{l}{\\textit{Token count $K$ (time steps per token)}}\\\\']
     spec = [('K4', '$K = 4$ (16)'), (None, '$K = 8$ (8), paper'), ('K16', '$K = 16$ (4)'), ('K32', '$K = 32$ (2)')]
     for v, lab in spec:
         g = full if v is None else d[d.variant == v]
-        lines.append(lab + ' & ' + ' & '.join(ms(g[c], nd=1) for c in cols) + '\\\\')
+        lines.append(lab + ' & ' + ' & '.join(ms(g[c], nd=1) for c in cols) + ' & ' + ext_cell(g, v) + '\\\\')
     lines.append('\\midrule')
-    lines.append('\\multicolumn{7}{l}{\\textit{Reliability targets (removal, dropout, noise)}}\\\\')
+    lines.append('\\multicolumn{8}{l}{\\textit{Reliability targets (removal, dropout, noise)}}\\\\')
     spec = [(None, '(0, 0.60, 0.65), paper'), ('T_low', '(0, 0.40, 0.45)'), ('T_high', '(0, 0.80, 0.85)'),
             ('T_flat', '(0, 0.50, 0.50)')]
     for v, lab in spec:
         g = full if v is None else d[d.variant == v]
-        lines.append(lab + ' & ' + ' & '.join(ms(g[c], nd=1) for c in cols) + '\\\\')
+        lines.append(lab + ' & ' + ' & '.join(ms(g[c], nd=1) for c in cols) + ' & ' + ext_cell(g, v) + '\\\\')
     r0 = d[d.variant == 'R0_RATA_K8_default']
     write('table_variants_rows.tex', '\n'.join(lines))
     if len(r0):
@@ -212,9 +217,13 @@ def table_variants():
             return '--'
         e = ext_df[ext_df.model == model].groupby(['seed', 'scenario']).top1.mean().groupby('seed').mean()
         return ms(e, nd=1)
+    nr = pd.read_csv(TABLES / 'FINAL_Ablation_per_seed.csv').query('variant=="NoReliability"').copy()
+    if 'skeleton_noise' not in nr.columns:   # not in the published ablation table; take the re-evaluation
+        a_runs = pd.read_csv(SRC / 'A_original_scenarios_per_run.csv')
+        sn = a_runs[(a_runs.model == 'NoReliability') & (a_runs.scenario == 'skeleton_noise')].groupby('seed').top1.mean()
+        nr['skeleton_noise'] = sn.sort_index().values
     entries = [('LateFusion-Robust', pub_lr, ext_mean('LateFusion-Robust')),
-               ('NoReliability (MulT-style)', pd.read_csv(TABLES / 'FINAL_Ablation_per_seed.csv').query('variant=="NoReliability"'),
-                ext_mean('NoReliability'))]
+               ('NoReliability (MulT-style)', nr, ext_mean('NoReliability'))]
     for v in ['TMC-style', 'QMF-style']:
         g = d[d.variant == v]
         entries.append((v, g, ms(g.extended_mean_top1, nd=1)))
