@@ -112,3 +112,5 @@ validation only. Scripts locate the repository root automatically; set `RATA_PRO
 ## Contact
 
 Corresponding author: Phu-Nguyen Le (nguyenlp@vaa.edu.vn), Vietnam Aerospace University.
+
+First author: Cao-Phuc Ha (caophucai@gmail.com), FPT University.
