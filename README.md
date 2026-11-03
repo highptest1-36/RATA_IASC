@@ -25,6 +25,40 @@ detection and selective prediction, sensitivity to the token count and to the re
 comparison with re-implemented TMC-style and QMF-style quality-aware fusion. All results, including the scenarios in
 which RATA-MAR is less robust than other methods, are in `REVISION_R1/experiments/outputs/`.
 
+## Results at a glance
+
+All numbers below come from the result files in this repository (UTD-MHAD, cross-subject protocol, mean over three
+training seeds). RATA-MAR is compared with two late-fusion baselines that share the same encoders: one trained on clean
+data only and one trained with the same corruptions as RATA-MAR.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/missing_modality_dark.png">
+  <img src="assets/missing_modality_light.png" alt="Accuracy with both streams, with the skeleton missing, and with the IMU missing" width="100%">
+</picture>
+
+When the inertial stream is missing, RATA-MAR keeps 80.5% accuracy, 21.6 points above the robust late-fusion baseline
+(paired test, p < 0.001). With both streams available, the three models are close (95.0% against 93.6% and 93.3%).
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/robustness_profile_dark.png">
+  <img src="assets/robustness_profile_light.png" alt="Accuracy of the three models under seven test conditions" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/temporal_delay_dark.png">
+  <img src="assets/temporal_delay_light.png" alt="Accuracy as the inertial stream is delayed by up to 16 time steps" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/extended_scenarios_dark.png">
+  <img src="assets/extended_scenarios_light.png" alt="Accuracy difference to LateFusion-Robust in 22 unseen degradation scenarios" width="100%">
+</picture>
+
+The 22 scenarios above are not used during training. RATA-MAR is more accurate than LateFusion-Robust in 19 of them; it
+is less accurate when both streams drop out intermittently and when skeleton tracking has gaps. Re-implemented
+TMC-style and QMF-style quality-aware fusion reach higher mean accuracy on these scenarios (85.4% and 86.0%); see
+`REVISION_R1/experiments/outputs/` for every result.
+
 ## Repository layout
 
 | Path | Content |
